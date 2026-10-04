@@ -28,7 +28,7 @@
   --color-error: #E03131;
 
   /* 3. 타이포그래피 */
-  --font-sans: "Pretendard", system-ui, sans-serif;
+  --font-sans: "Pretendard Variable", "Pretendard", system-ui, sans-serif;
 
   --text-display: 48px;
   --text-display--line-height: 56px;
