@@ -156,7 +156,7 @@
 | 레이트 리밋 | Upstash Redis + `@upstash/ratelimit` | 서버리스 환경에서 동작, 무료 티어 |
 | 배포 | **Vercel** (기본 `*.vercel.app` 도메인) | Next.js 네이티브, 환경변수 관리, 프리뷰 배포 |
 | 분석(선택) | Vercel Analytics | 생성 수·차단율 확인 |
-| 패키지 매니저 | pnpm | |
+| 패키지 매니저 | npm | Node 기본 포함, 1인 프로젝트라 pnpm 이점 적음, Vercel 기본 지원 |
 | 코드 품질 | ESLint + Prettier | |
 | 테스트 | Vitest(프롬프트 빌더·검증 로직), Playwright(핵심 플로우 E2E) | 하네싱 과제에서 검증 루프로 활용 |
 

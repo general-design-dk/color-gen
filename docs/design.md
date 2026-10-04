@@ -76,6 +76,7 @@
 | `space-lg` | 24px |
 | `space-xl` | 40px |
 
+- 코드 토큰 이름은 `--spacing-space-md` (클래스 `p-space-md`). `--spacing-md`로 두면 Tailwind의 `max-w-md` 등 폭 유틸리티를 덮어쓰기 때문
 - 페이지 좌우 여백: 모바일 `space-md`, 넓은 화면 `space-xl`
 - 카드 안쪽 여백: `space-lg`
 
