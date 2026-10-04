@@ -1,15 +1,15 @@
 # 진행 기록
 
-- 현재 STEP: **STEP 4 피그마 구현** (STEP 3 완료)
+- 현재 STEP: **STEP 5 피그마 정리·동기화** (STEP 4 완료, 사람이 피그마에서 다듬는 중)
 - 다음: STEP 2 토큰화
-- 피그마 URL: (STEP 4에서 기록)
+- 피그마 URL: https://www.figma.com/design/v7Sl5GtIgh2BmH03Hh4Z2O/color-gen
 
 | STEP | 상태 | 게이트 | 연속 실패 | 메모 |
 |---|---|---|---|---|
 | 1 기획 | ✅ 완료 | — | — | docs/prd.md, userflow.md |
 | 2 토큰화 | ✅ 완료 | G2 PASS | 0 | app/tokens.css, reports/g2-20261004-1150.md |
 | 3 UI 구현 | ✅ 완료 | G3 PASS | 0 | components/ 7개, 스크린샷 8장, reports/g3-20261004-1158.md |
-| 4 피그마 구현 | 대기 | G4 | 0 | |
+| 4 피그마 구현 | ✅ 완료 | G4 PASS | 0 | 변수 30, 텍스트 스타일 9, 컴포넌트 6, 화면 8, reports/g4-20261004-1209.md |
 | 5 피그마 동기화 | 대기 | G5 + 사람 | 0 | |
 | 6 기능 구축 | 대기 | G6 | 0 | |
 | 7 UX 보강 | 대기 | G7 | 0 | |
@@ -22,3 +22,4 @@
 - 2026-10-04: 드라이런 실행 — 14건 모두 기대대로 판정 (reports/dry-run.md)
 - 2026-10-04: STEP 2 완료 — Next.js 16.3.8 뼈대(npm), app/tokens.css, G2 PASS
 - 2026-10-04: STEP 3 완료 — 상태 4개 정적 UI, 컴포넌트 7개, Playwright 스크린샷, G3 PASS
+- 2026-10-04: STEP 4 완료 — 피그마 변수·스타일·컴포넌트·화면 8개, G4 PASS (폰트는 Noto Sans KR로 대체)
