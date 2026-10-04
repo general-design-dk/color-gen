@@ -1,0 +1,38 @@
+{
+  "_note": "게이트 기준값 SSOT. 수정은 오케스트레이터 제안 → 사람 승인. 원천: docs/design.md, docs/prd.md §9",
+  "design": {
+    "colors": ["#FFD43B", "#FCC419", "#111111", "#6B6B6B", "#B0B0B0", "#FFFFFF", "#F5F5F5", "#E5E5E5", "#E03131"],
+    "radius": [16, 24, 9999],
+    "fontSizes": [14, 16, 20, 22, 28, 32, 48],
+    "spacing": [8, 12, 16, 24, 40],
+    "fontFamily": "Pretendard"
+  },
+  "ui": {
+    "states": ["idle", "loading", "done", "error"],
+    "viewports": ["mobile", "desktop"],
+    "scanDirs": ["app", "components"],
+    "excludeFiles": ["app/tokens.css"],
+    "forbiddenStylePatterns": ["#[0-9a-fA-F]{3,8}\\b", "\\[[0-9]+px\\]"]
+  },
+  "safety": {
+    "blockRateMin": 0.98,
+    "falseBlockRateMax": 0.05,
+    "blockedImageApiCallsMax": 0,
+    "nonBlackWhitePixelRatioMax": 0
+  },
+  "security": {
+    "bundleDir": ".next/static",
+    "forbiddenPatterns": ["sk-ant-[A-Za-z0-9_-]+", "sk-[A-Za-z0-9]{20,}", "AIza[0-9A-Za-z_-]{30,}", "NEXT_PUBLIC_[A-Z_]*KEY"]
+  },
+  "realApi": {
+    "classifyMax": 50,
+    "imageMax": 10
+  },
+  "print": {
+    "pageSize": "A4",
+    "pageCount": 1
+  },
+  "harness": {
+    "maxConsecutiveFailures": 3
+  }
+}
