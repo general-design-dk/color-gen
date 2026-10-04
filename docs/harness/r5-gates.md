@@ -23,3 +23,18 @@
 ## 실패 처리
 - 같은 게이트 3회 연속 실패 → 멈추고 사람에게 보고
 - UI 변경 감시(스크린샷 비교)는 하지 않음 → STEP 8에서 사람이 눈으로 확인
+
+## 실행
+- 게이트: `node scripts/gates/run.mjs g2` (`--report`로 리포트 저장, `--root DIR`로 다른 폴더 대상)
+- 드라이런: `node scripts/gates/dryrun.mjs` → docs/harness/reports/dry-run.md
+- 판정: fail이 하나라도 있으면 FAIL. skip(앱 생성 전 등 해당 없음)은 통과로 보되 결과에 표시
+- 외부 패키지 없음 (Node 내장 모듈만)
+
+## 게이트 입력 파일 (각 STEP 담당이 만든다)
+| 게이트 | 입력 | 만드는 쪽 |
+|---|---|---|
+| G4·G5 | docs/harness/figma-variables.json (`{variables:[{name,value}]}`) | figma-sync |
+| G5 | progress.md의 `G5 사람 승인: YYYY-MM-DD` 줄 | 사람 |
+| G6 | docs/harness/reports/safety-result.json (`{blockedKeywords, imageApiCalls}`) | feature-builder (tests/safety.test) |
+| G3 | docs/harness/reports/screenshots/{state}-{viewport}.png 8장 | ui-builder |
+| G8 | reports/keyword-eval.json, reports/g8-images/*.png, reports/print.pdf | gate-judge (STEP 8 실행) |
