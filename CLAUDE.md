@@ -3,6 +3,8 @@
 아이용 색칠공부 도안 생성 웹 (Next.js + Vercel). 1인 메이커 프로젝트.
 규칙은 방향을 잡기 위한 기준이다. 상황에 안 맞으면 멈추고 사람과 상의해서 고친다.
 
+@AGENTS.md (Next.js 16 변경사항 — 코드 작성 전 확인)
+
 ## 기준 문서
 - 서비스: docs/prd.md · docs/userflow.md · docs/design.md
 - 작업 흐름: docs/workflow.md

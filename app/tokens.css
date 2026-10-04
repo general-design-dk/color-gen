@@ -1,0 +1,82 @@
+/*
+ * 색칠요정 디자인 토큰 (원천: docs/design.md, 허용값: docs/harness/rules.json)
+ * Tailwind v4 @theme — 각 변수는 유틸리티 클래스를 만든다.
+ *   --color-primary        → bg-primary, text-primary, border-primary
+ *   --text-display         → text-display (크기·행간·굵기 함께 적용)
+ *   --radius-card          → rounded-card
+ *   --spacing-space-md     → p-space-md, gap-space-md, m-space-md
+ *   --shadow-toast         → shadow-toast
+ */
+@theme {
+  /* 토큰 밖 값 사용을 막기 위해 Tailwind 기본 팔레트·크기·반경·그림자를 끈다 */
+  --color-*: initial;
+  --text-*: initial;
+  --radius-*: initial;
+  --shadow-*: initial;
+
+  /* 2. 컬러 */
+  --color-primary: #FFD43B;
+  --color-primary-hover: #FCC419;
+  --color-on-primary: #111111;
+  --color-text: #111111;
+  --color-text-sub: #6B6B6B;
+  --color-text-disabled: #B0B0B0;
+  --color-bg: #FFFFFF;
+  --color-surface: #F5F5F5;
+  --color-border: #E5E5E5;
+  --color-toast-bg: #111111;
+  --color-error: #E03131;
+
+  /* 3. 타이포그래피 */
+  --font-sans: "Pretendard", system-ui, sans-serif;
+
+  --text-display: 48px;
+  --text-display--line-height: 56px;
+  --text-display--font-weight: 800;
+  --text-display--letter-spacing: -0.02em;
+  --text-display-mobile: 32px;
+  --text-display-mobile--line-height: 40px;
+  --text-display-mobile--font-weight: 800;
+  --text-display-mobile--letter-spacing: -0.02em;
+
+  --text-subtitle: 20px;
+  --text-subtitle--line-height: 30px;
+  --text-subtitle--font-weight: 400;
+  --text-subtitle-mobile: 16px;
+  --text-subtitle-mobile--line-height: 24px;
+  --text-subtitle-mobile--font-weight: 400;
+
+  --text-input: 28px;
+  --text-input--line-height: 36px;
+  --text-input--font-weight: 700;
+  --text-input-mobile: 22px;
+  --text-input-mobile--line-height: 30px;
+  --text-input-mobile--font-weight: 700;
+
+  --text-button: 20px;
+  --text-button--line-height: 28px;
+  --text-button--font-weight: 700;
+
+  --text-body: 16px;
+  --text-body--line-height: 24px;
+  --text-body--font-weight: 500;
+
+  --text-caption: 14px;
+  --text-caption--line-height: 20px;
+  --text-caption--font-weight: 400;
+
+  /* 4. 모서리 */
+  --radius-card: 24px;
+  --radius-input: 16px;
+  --radius-full: 9999px;
+
+  /* 5. 간격 — `--spacing-xs` 등으로 두면 max-w-xs·w-sm 같은 기본 유틸리티를 덮어쓰므로 space- 접두사를 붙인다 */
+  --spacing-space-xs: 8px;
+  --spacing-space-sm: 12px;
+  --spacing-space-md: 16px;
+  --spacing-space-lg: 24px;
+  --spacing-space-xl: 40px;
+
+  /* 7. 그림자 (토스트 전용) */
+  --shadow-toast: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
